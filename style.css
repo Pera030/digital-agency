@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poppins:400,700&display=swap');
+:root {
+    --crna: rgb(16, 24, 32);
+    --zuta: rgb(254, 231, 21);
+    --bela: #fff;
+    --svetloSiva: #e8e2e2;
+    --padding: 100px 0;
+    --transition: .4s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--crna);
+}
+
+h1,h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.cf::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/***************
+Navigation
+***************/
+nav {
+    background-color: rgba(16, 24, 32,.7);
+    padding: 0px 70px;
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    width: 100%;
+}
+
+nav .logo {
+    float: left;
+    color: var(--zuta);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+nav .logo:hover {
+    color: var(--svetloSiva);
+    transition: var(--transition);
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    color: var(--svetloSiva);
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+nav ul li a:hover {
+    color: var(--zuta);
+    transition: var(--transition);
+}
+
+/***************
+Header
+***************/
+header {
+    background-image:linear-gradient(rgba(16, 24, 32,.9),rgba(254, 231, 21,1)),url(img/header.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-bottom: 10px solid var(--crna);
+}
+
+header h1 {
+    padding-top: 500px;
+    font-size: 3rem;
+}
+
+header p {
+    padding: 15px 0 50px 0;
+}
+
+/***************
+What we do
+***************/
+.whatWeDo {
+    padding: var(--padding);
+    text-align: center;
+}
+
+.whatWeDo h2 {
+    font-size: 2.5rem;
+}
+
+.whatWeDo h2::after {
+    display: block;
+    content: "";
+    background-color: var(--zuta);
+    height: 5px;
+    width: 120px;
+    border: 4px solid var(--crna);
+    margin: 40px auto;
+}
+
+.whatWeDo p {
+    padding-bottom: 50px;
+}
+
+.whatWeDo .row:nth-of-type(1) {
+    border-bottom: 2px solid var(--svetloSiva);
+}
+
+.whatWeDo .row .col {
+    float: left;
+    width: 50%;
+    padding: 50px 30px;
+}
+
+.whatWeDo .row .col:first-child {
+    border-right: 2px solid var(--svetloSiva);
+}
+
+.whatWeDo .row .col i {
+    color: var(--zuta);
+    font-size: 3.5rem;
+}
+
+.whatWeDo .row .col h3 {
+    font-size: 1.6rem;
+    padding: 30px 0 15px 0;
+}
+
+.whatWeDo .row .col h4 {
+    padding-bottom: 15px;
+}
+
+.whatWeDo .row .col p {
+    padding-bottom: 30px;
+    line-height: 1.6;
+}
+
+.whatWeDo .row .col button {
+    background-color: var(--zuta);
+    border: none;
+    padding: 20px 30px;
+    color: var(--crna);
+    font-size: 1.3rem;
+}
+
+.whatWeDo .row .col button:hover {
+    background-color: var(--crna);
+    color: var(--zuta);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+/***************
+Footer 
+***************/
+footer {
+    color: var(--bela);
+    background-color: var(--crna);
+    text-align: center;
+    padding: 50px 0;
+}
+
+/***************
+Responsive
+***************/
+@media(max-width:768px) {
+    .container {
+        width: 90%;
+    }
+    
+    nav {
+        background-color: rgba(16, 24, 32,.7);
+        padding: 20px 10px 10px 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    nav .logo {
+        float: none;
+        color: var(--zuta);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    
+    nav ul {
+        float: none;
+    }
+    
+    nav ul li a {
+        padding-left: 0;
+        padding-right: 25px;
+    }
+
+    .whatWeDo .row .col {
+        width: 100%;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
